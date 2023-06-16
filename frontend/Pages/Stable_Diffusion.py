@@ -7,7 +7,7 @@ import torch
 import torchvision.transforms as transforms
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-headers = {"Authorization": "Bearer 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"}
+headers = {"API_KEY"}
 
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
